@@ -1,10 +1,12 @@
 @import '~bootstrap/scss/bootstrap';
 
+.container{
+    width: 80%;
+}
+
 header{
 
-    .container{
-        width: 80%;
-    }
+    
     
     .bg-azzurro{
         width: 100%;
@@ -185,5 +187,52 @@ footer{
             
             
         }
+    }
+}
+
+
+main{
+
+    color: white;
+
+    .main-bg-top{
+        width: 100%;
+        background-color: black;
+        padding: 1em 0;
+
+        .container{
+            display: flex;
+            flex-direction: column;
+            gap: 1em;
+            align-items: center;
+
+            position: relative;
+            
+            .current-series{
+                background-color: dodgerblue;
+                padding: 0.3em 0.6em;
+                text-transform: uppercase;
+                font-weight: bold;
+                
+                position: absolute;
+                left: 0;
+                top: -30px;
+            }
+            .load-more-btn{
+                background-color: dodgerblue;
+                padding: 0.5em 1em;
+                text-transform: uppercase;
+                font-weight: bold;
+                color: white;
+                border: none;
+            }
+            
+        }
+    }
+
+    .main-bg-bot{
+        width: 100%;
+        background-color: dodgerblue;
+        padding: 1em 0;
     }
 }
