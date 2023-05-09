@@ -42,6 +42,7 @@ Route::get('/', function () {
     ];
 
     $comics = config('comics');
+    $mainLinks = config('mainbottomlinks');
 
-    return view('home', compact('links', 'comics'));
+    return view('home', compact('links', 'comics', 'mainLinks'));
 });
