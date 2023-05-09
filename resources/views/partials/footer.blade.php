@@ -3,7 +3,19 @@
     <div class="bg-footer">
         <div class="container">
             <div class="footer-top-left">
-                
+                <div class="my-footer-links-container">
+
+                    @foreach($links as $singleLink)
+                    <ul>
+                        <li class="footer-title">{{$singleLink['title']}}</li>
+                        @foreach($singleLink['linkSingoli'] as $link)
+                        <li class="footer-link">{{$link}}</li>
+                        @endforeach
+                    </ul>
+                    @endforeach
+                </div>
+                <span>tutti i diritti sono miei copyright etc</span>
+
             </div>
             <div class="footer-img-container">
                 <img src="{{Vite::asset('resources/img/dc-logo-bg.png')}}" alt="bglogo">

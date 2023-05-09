@@ -99,8 +99,41 @@ footer{
 
             height: 400px;
             .footer-top-left{
+                display: flex;
+                flex-direction: column;
+                gap: 1em;
+
                 padding: 2em 0;
                 width: 50%;
+
+                .my-footer-links-container{
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                    gap: 1em;
+
+                    ul{
+                        display: flex;
+                        flex-direction: column;
+                        gap: 1em;
+                        list-style-type: none;
+
+                        width: 30%;
+
+                        li.footer-title{
+                            text-transform: uppercase;
+                            color: white;
+                            font-weight: bold;
+                        }
+
+                        li.footer-link{
+                            color: grey;
+                            font-size: 0.8em;
+                        }
+                    }
+                }
+
+                
             }
 
             .footer-img-container{

@@ -14,5 +14,34 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('home');
+    $links = [
+        [
+            'title' => 'Dc Comics',
+            'linkSingoli' => [
+                'testo1', 'testo2', 'testo3'
+            ]
+        ],
+        [
+            'title' => 'Dc',
+            'linkSingoli' => [
+                'testo1', 'testo2', 'testo3'
+            ]
+        ],
+        [
+            'title' => 'Sites',
+            'linkSingoli' => [
+                'testo1', 'testo2', 'testo3'
+            ]
+        ],
+        [
+            'title' => 'Shop',
+            'linkSingoli' => [
+                'testo1', 'testo2', 'testo3'
+            ]
+        ],
+    ];
+
+    $comics = config('comics');
+
+    return view('home', compact('links', 'comics'));
 });
