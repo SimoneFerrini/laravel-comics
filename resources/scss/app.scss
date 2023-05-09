@@ -33,11 +33,13 @@ header{
         align-content: center;
         gap: 2em;
 
-        padding-top: 2em;
+        padding-top: 1em;
 
         .img-container{
             width: 70px;
             height: 70px;
+
+            margin-bottom: 1em;
 
             img{
                 width: 100%;
@@ -52,7 +54,7 @@ header{
             margin-bottom: 0;
 
             li{
-                padding: 25px 5px;
+                padding: 33px 5px;
                 text-transform: uppercase;
                 font-weight: bold;
                 font-size: 0.8em;
