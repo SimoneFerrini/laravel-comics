@@ -46,3 +46,34 @@ Route::get('/', function () {
 
     return view('home', compact('links', 'comics', 'mainLinks'));
 });
+
+Route::get('/bonus', function () {
+    $links = [
+        [
+            'title' => 'Dc Comics',
+            'linkSingoli' => [
+                'testo1', 'testo2', 'testo3'
+            ]
+        ],
+        [
+            'title' => 'Dc',
+            'linkSingoli' => [
+                'testo1', 'testo2', 'testo3'
+            ]
+        ],
+        [
+            'title' => 'Sites',
+            'linkSingoli' => [
+                'testo1', 'testo2', 'testo3'
+            ]
+        ],
+        [
+            'title' => 'Shop',
+            'linkSingoli' => [
+                'testo1', 'testo2', 'testo3'
+            ]
+        ],
+    ];
+
+    return view('bonus', compact('links'));
+});
